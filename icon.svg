@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#1e1b4b" />
+      <stop offset="100%" stop-color="#090d16" />
+    </linearGradient>
+    <linearGradient id="neon" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="50%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#6366f1" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="16" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  
+  <!-- Rounded Base Icon -->
+  <rect width="512" height="512" rx="128" fill="url(#bg)" />
+  <rect width="504" height="504" x="4" y="4" rx="124" stroke="url(#neon)" stroke-width="4" stroke-opacity="0.3" />
+
+  <!-- Dynamic Dumbbell & Lightning AI Core Shape -->
+  <g transform="translate(256, 256) scale(1.15) translate(-256, -256)" filter="url(#glow)">
+    <!-- Dumbbell Left Weight Plate -->
+    <rect x="110" y="196" width="36" height="120" rx="14" fill="url(#neon)" />
+    <rect x="156" y="216" width="22" height="80" rx="10" fill="#38bdf8" />
+
+    <!-- Dumbbell Right Weight Plate -->
+    <rect x="366" y="196" width="36" height="120" rx="14" fill="url(#neon)" />
+    <rect x="334" y="216" width="22" height="80" rx="10" fill="#38bdf8" />
+
+    <!-- Center Bar with Lightning AI Pulse -->
+    <rect x="178" y="244" width="156" height="24" rx="12" fill="#e2e8f0" />
+    
+    <!-- Central AI Pulse Lightning Bolt -->
+    <path d="M266 140L208 266H260L246 372L318 244H266L288 140H266Z" fill="#10b981" />
+    <path d="M262 152L216 260H258L248 350L308 248H264L282 152H262Z" fill="#facc15" opacity="0.9" />
+  </g>
+
+  <!-- Sparkles -->
+  <circle cx="160" cy="150" r="8" fill="#38bdf8" opacity="0.8" />
+  <circle cx="360" cy="360" r="6" fill="#10b981" opacity="0.8" />
+  <circle cx="370" cy="140" r="10" fill="#818cf8" opacity="0.7" />
+</svg>
