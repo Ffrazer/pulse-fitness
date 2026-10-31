@@ -1,0 +1,6 @@
+{
+  "name": "FitFlow AI - Розумний Планувальник Тренувань",
+  "description": "Потужний кросплатформений трекер тренувань та календар активностей зі штучним інтелектом Gemini, живим логуванням вправ, нагадуваннями та Pro-підпискою.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
